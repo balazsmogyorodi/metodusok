@@ -14,6 +14,10 @@ public class metodusok {
         }
         kiir("Az első 10 szám összege: " + osszeg);
     }
+    
+    private static void osszegek() {
+    osszead(15, 18);
+    }
 
     private static void osszead(int a, int b) {
         
