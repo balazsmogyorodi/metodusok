@@ -4,41 +4,37 @@ package tombok;
 public class metodusok {
     
     public static void main(String[] args) {
+        int oszeg = elso10Szamosszege();
+        String kimenet = "Az első 10 szám összege: " + oszeg + "\n";
+        kiir(kimenet);
         
-        
-       feladatok();
-     
+        int szam1 = 7, szam2 = 4;
+        int oszeadva;
+        oszeadva = osszead(szam1, szam2);
+        String s = String.format("%d + %d = %d\n", szam1, szam2, oszeadva);
+        kiir(s);
+   
     }
     
-    private static void feladatok() {
-    elso10Szamosszege();
-    osszegek();
 
-}
-
-    private static void elso10Szamosszege() {
+    private static int elso10Szamosszege() {
         int osszeg = 0;
         for (int i = 0; i < 10; i++) {
             osszeg += i;
         }
-        kiir("Az első 10 szám összege: " + osszeg);
+        return osszeg;
     }
     
-    private static void osszegek() {
-    osszead(15, 18);
-    }
+   
 
     private static void osszead(int a, int b) {     
         System.out.printf("%d + %d = %d\n", a, b,  a+b);    
     }
     
     private static void kiir(String szoveg) {
-        
      System.out.println(szoveg);
-    
-    
     }
     
    
-    
+
 }
