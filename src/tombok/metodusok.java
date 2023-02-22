@@ -27,8 +27,9 @@ public class metodusok {
     
    
 
-    private static void osszead(int a, int b) {     
-        System.out.printf("%d + %d = %d\n", a, b,  a+b);    
+    private static int osszead(int a, int b) {
+        int eredmeny = a + b;
+        return eredmeny;   
     }
     
     private static void kiir(String szoveg) {
