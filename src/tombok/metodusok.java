@@ -3,10 +3,18 @@ package tombok;
 
 public class metodusok {
     
+    
     public static void main(String[] args) {
-        int oszeg = elso10Szamosszege();
-        String kimenet = "Az első 10 szám összege: " + oszeg + "\n";
-        kiir(kimenet);
+        feladatok();
+    }
+        
+        
+        
+        
+      private static void feladatok() {
+        sorozatosOsszadas();
+        
+        
         
         int szam1 = 7, szam2 = 4;
         int oszeadva;
@@ -16,7 +24,8 @@ public class metodusok {
         
         oszeadva = osszead(2, 2);
          oszeadva += osszead(2, 3);
-         kiir("5+6+2+10=" + Math.sqrt(oszeadva) +"\n");
+         kiir("2+2+2+3 =" + oszeadva +" ennek a gyöke=" + Math.sqrt(oszeadva) +"\n");
+         
               
         
         oszeadva = osszead(1,osszead(2, osszead(3,4)));
@@ -26,8 +35,22 @@ public class metodusok {
         kiir("10+14+7+9+10=" + oszeadva +"\n");
         
         
-   
+        int a = 1, b = 2, c= 13;
+        oszeadva = osszead(a, osszead(b, c));
+        double gyok = Math.sqrt(oszeadva);
+        s = String.format("%d+%d+%d gyöke:".formatted(a, b, c));
+        String kimenet = String.format("%s %.4f\n", s, gyok);
+        kiir(kimenet);
+        
+}
+
+    private static void sorozatosOsszadas() {
+        int oszeg = elso10Szamosszege();
+        String kimenet = "Az első 10 szám összege: " + oszeg + "\n";
+        kiir(kimenet);
     }
+   
+    
     
 
     private static int elso10Szamosszege() {
