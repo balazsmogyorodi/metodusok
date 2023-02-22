@@ -14,9 +14,9 @@ public class metodusok {
         String s = String.format("%d + %d = %d\n", szam1, szam2, oszeadva);
         kiir(s);
         
-        oszeadva = osszead(5, 6);
-         oszeadva += osszead(2, 10);
-         kiir("5+6+2+10=" + oszeadva +"\n");
+        oszeadva = osszead(2, 2);
+         oszeadva += osszead(2, 3);
+         kiir("5+6+2+10=" + Math.sqrt(oszeadva) +"\n");
               
         
         oszeadva = osszead(1,osszead(2, osszead(3,4)));
@@ -24,6 +24,8 @@ public class metodusok {
         
         oszeadva = osszead(10, osszead(14, osszead(7, osszead(9, 10))));
         kiir("10+14+7+9+10=" + oszeadva +"\n");
+        
+        
    
     }
     
