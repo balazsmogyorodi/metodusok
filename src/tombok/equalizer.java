@@ -27,13 +27,11 @@ public class Equalizer {
     }
          
          private static void eq() {
-             
              eq(false);
          }
          
-         private static void eq(int db) {
-             eq(db, false);
-             
+         private static void eq(int hossz) {
+             eq(hossz, false);      
          }
          
           
@@ -45,9 +43,9 @@ public class Equalizer {
         
          
           private static void eq(int hossz, boolean jo) {
-             String szin = "\u001B[45m";
+             String szin = "\u001B[45m" + "*";
              for (int i = 0; i < hossz; i++) {
-                 System.out.print(szin + " ");
+                 System.out.print(szin);
                  
              }
              if (jo) {
