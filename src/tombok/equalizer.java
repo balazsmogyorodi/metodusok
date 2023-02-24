@@ -17,28 +17,31 @@ public class equalizer {
 
     private static void equalizer_5_sorbol() {
         int db = 0;
-        db = rnd.nextInt(1, 8);
-        if (db == db) {
-            db = rnd.nextInt(1, 8);
-        }
+        db = rnd.nextInt(3, 8);
+       
         
-        eq(db);
+        eq();
         eq(12);
-        eq(db);
+        eq();
         eq(8);
-        eq(db);
+        eq();
     }
          
-         private static void eq(int db) {
-             
+         private static void eq() {
+             int db = rnd.nextInt(3,8);
+             eq(db);
+         }
+        
+         
+          private static void eq(int hossz) {
              String szin = "\u001B[45m";
-             for (int i = 0; i < db; i++) {
+             for (int i = 0; i < hossz; i++) {
                  System.out.print(szin + " ");
                  
              }
              System.out.println("");
          
-         
+          }
          
          }
          
