@@ -1,4 +1,3 @@
-
 package tombok;
 import java.util.Random;
 
@@ -16,9 +15,6 @@ public class Equalizer {
      }
 
     private static void equalizer_5_sorbol() {
-       
-       
-        
         eq();
         eq(8, true);
         eq(12);
@@ -46,7 +42,6 @@ public class Equalizer {
              String szin = "\u001B[45m" + "*";
              for (int i = 0; i < hossz; i++) {
                  System.out.print(szin);
-                 
              }
              if (jo) {
                  System.out.print(" " + "(" + hossz + ")");
